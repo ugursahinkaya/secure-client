@@ -21,21 +21,28 @@ export default [
       },
       {
         file: "dist/secure-auth.umd.js",
-        name: "YUM",
+        name: "Mecra",
         extend: true,
         format: "umd",
         globals: {
-          "@ugursahinkaya/generic-router": "YUM",
-          "@ugursahinkaya/secure-fetch": "YUM",
+          "@ugursahinkaya/generic-router": "Mecra",
+          "@ugursahinkaya/secure-fetch": "Mecra",
+          "@ugursahinkaya/logger": "Mecra",
+          "@ugursahinkaya/native-bridge": "Mecra",
         },
       },
     ],
-    external: ["@ugursahinkaya/generic-router", "@ugursahinkaya/secure-fetch"],
+    external: [
+      "@ugursahinkaya/generic-router",
+      "@ugursahinkaya/secure-fetch",
+      "@ugursahinkaya/logger",
+      "@ugursahinkaya/native-bridge",
+    ],
     plugins: [
       typescript({
         tsconfig: "./tsconfig.json",
       }),
-      terser(),
+      //terser(),
     ],
   },
   {
