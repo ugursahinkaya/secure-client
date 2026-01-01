@@ -48,12 +48,11 @@
     "typescript": "5.9.3"
   },
   "dependencies": {
-    "@ugursahinkaya/generic-router": "^2.1.0",
-    "@ugursahinkaya/logger": "^2.1.0",
+    "@ugursahinkaya/generic-router": "workspace:^",
+    "@ugursahinkaya/logger": "workspace:^",
     "@ugursahinkaya/native-bridge": "workspace:^",
     "@ugursahinkaya/secure-fetch": "workspace:^",
     "@ugursahinkaya/shared-types": "^2.1.0",
-    "@ugursahinkaya/utils": "^2.1.0",
-    "jsqr": "^1.4.0"
+    "@ugursahinkaya/utils": "^2.1.0"
   }
 }
